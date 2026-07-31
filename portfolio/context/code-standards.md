@@ -37,4 +37,6 @@
 - `assets/img/` — Gambar (foto profil, screenshot proyek)
 - `assets/cv.pdf` — File CV
 - `context/` — Dokumentasi proyek dan panduan AI
-- `public/` — File publik (kosong, untuk deploy)
+- **Jangan buat folder `public/`** — Vercel otomatis memakai folder bernama `public`
+  sebagai output directory untuk situs statis, sehingga bisa menimpa `index.html`
+  utama. File situs langsung disajikan dari akar direktori proyek.

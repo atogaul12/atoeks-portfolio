@@ -36,3 +36,5 @@
 3. Setiap section harus memiliki `id` yang sesuai dengan href di navbar
 4. File gambar dan PDF harus berada di folder `assets/`
 5. Tidak boleh ada ketergantungan pada library eksternal selain Google Fonts
+6. Tidak boleh ada folder bernama `public/` di direktori root — Vercel menganggapnya
+   sebagai output directory untuk situs statis dan akan menyajikan isinya (bisa kosong)

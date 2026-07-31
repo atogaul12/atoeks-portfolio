@@ -28,6 +28,12 @@ dan menerjemahkan dokumentasi ke Bahasa Indonesia. Website tetap dalam Bahasa In
   - Commit & push ke GitHub `atogaul12/atoeks-portfolio`
   - Menambahkan instruksi deploy Vercel ke README (Framework: Other,
     Root Directory: `portfolio`)
+- Memperbaiki situs blank di Vercel:
+  - Menghapus folder kosong `portfolio/public/` yang menyebabkan Vercel
+    menyajikan `public/index.html` kosong sebagai output (Vercel memakai folder
+    `public` sebagai output directory untuk situs statis)
+  - Menambahkan invariant "tidak boleh ada folder `public/`" di `architecture.md`
+    dan catatan di `code-standards.md`
 
 ## Sedang Dikerjakan
 
