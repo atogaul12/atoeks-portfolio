@@ -42,18 +42,23 @@ portfolio/
 2. Taruh di folder `assets/`
 3. Tombol "LIHAT CV" akan otomatis mengarah ke file tersebut
 
-## Deploy ke Vercel via VS Code → GitHub
+## Deploy ke Vercel
 
-```bash
-# 1. Buka folder portfolio/ di VS Code
-# 2. Buka terminal (Ctrl + `)
-git init
-git add .
-git commit -m "Initial portfolio"
+Repo GitHub `atogaul12/atoeks-portfolio` sudah disiapkan untuk deploy. Situs
+berada di subfolder `portfolio/`.
 
-# 3. Source Control (sidebar) → Publish to GitHub
-# 4. Buka vercel.com → Add New Project → pilih repo → Framework: Other → Deploy
-```
+### Cara deploy
+
+1. Buka [vercel.com](https://vercel.com) → **Add New Project**
+2. Pilih repo `atoeks-portfolio` dari GitHub
+3. Set konfigurasi:
+   - **Framework Preset**: `Other`
+   - **Root Directory**: `portfolio`
+   - **Build Command**: kosong (tidak ada build)
+   - **Output Directory**: kosong
+4. Klik **Deploy**
+
+> Situs 100% statis, jadi tidak perlu command build apa pun.
 
 ## Kustomisasi Cepat
 

@@ -22,6 +22,12 @@ dan menerjemahkan dokumentasi ke Bahasa Indonesia. Website tetap dalam Bahasa In
 - Mengisi `context/ai-workflow-rules.md` dengan aturan workflow AI
 - Mengisi `context/progress-tracker.md` dengan progress saat ini
 - Menerjemahkan kontak dan beberapa bagian index.html ke Bahasa Indonesia
+- Merapikan struktur repo untuk deploy Vercel:
+  - Menghapus nested git repo di `portfolio/.git`
+  - Membersihkan file duplikat lama di root repo
+  - Commit & push ke GitHub `atogaul12/atoeks-portfolio`
+  - Menambahkan instruksi deploy Vercel ke README (Framework: Other,
+    Root Directory: `portfolio`)
 
 ## Sedang Dikerjakan
 
@@ -32,6 +38,7 @@ dan menerjemahkan dokumentasi ke Bahasa Indonesia. Website tetap dalam Bahasa In
 
 - Verifikasi bahwa semua teks Bahasa Indonesia sudah konsisten
 - Testing tampilan di browser
+- Deploy ke Vercel (Framework: Other, Root Directory: `portfolio`)
 
 ## Pertanyaan Terbuka
 
