@@ -1,72 +1,59 @@
-# M. Ato'ulloh — Portofolio
+# M. Ato'ulloh — Portfolio
 
-Website portofolio pribadi dengan tema Sci-Fi / Space.
-
-## Struktur Proyek
+## Struktur Project
 
 ```
-portfolio/
-├── index.html              ← Halaman utama (edit konten di sini)
+porto/
+├── index.html              ← Halaman utama
 ├── css/
-│   └── style.css           ← Semua styling (warna, layout, font, dll)
+│   └── style.css           ← Semua styling
 ├── js/
-│   └── main.js             ← Starfield, scroll reveal, active nav
+│   └── main.js             ← Animasi & interaksi
 ├── assets/
 │   ├── img/
-│   │   ├── foto.jpg        ← Taruh foto profil di sini
-│   │   ├── proj-pentest.jpg    ← Screenshot proyek 1
-│   │   ├── proj-poverty.jpg    ← Screenshot proyek 2
-│   │   ├── proj-idfarm.jpg     ← Screenshot proyek 3
-│   │   └── proj-lms.jpg        ← Screenshot proyek 4
-│   └── cv.pdf              ← Taruh file CV di sini
-├── context/                ← Dokumentasi proyek & panduan AI
+│   │   ├── foto.jpg              ✅ Sudah ada (foto profil)
+│   │   ├── proj-agronow.jpg      ← Screenshot AgroNow LMS
+│   │   ├── proj-superapp.jpg     ← Screenshot SuperApp
+│   │   ├── proj-pentest.jpg      ← Screenshot Burp Suite/OWASP ZAP
+│   │   ├── proj-idfarm.jpg       ← Screenshot ID Farm
+│   │   └── proj-poverty.jpg      ← Screenshot PT Kebul Jaya
+│   └── pdf/
+│       ├── cv.pdf                ✅ Sudah ada (CV lengkap)
+│       ├── porto-sementara.pdf   ← Taruh Porto_Sementara.pdf di sini
+│       ├── sertif-bnsp.pdf       ← Sertifikat BNSP
+│       ├── sertif-codepolitan.pdf ← Sertifikat Codepolitan
+│       ├── sertif-google.pdf     ← Sertifikat Google/Coursera
+│       └── sertif-idn.pdf        ← Sertifikat IDN
 └── README.md
 ```
 
-## Cara Upload Foto Profil
+## Cara Tambah Thumbnail Screenshot Proyek
 
-1. Taruh file foto di `assets/img/` (nama bebas, misal `foto.jpg`)
-2. Buka `index.html`, cari bagian `<!-- CARA GANTI FOTO -->`
-3. Hapus baris `<div class="photo-placeholder">MA</div>`
-4. Uncomment (hapus `<!--` dan `-->`) pada baris `<img src="assets/img/foto.jpg" ...>`
+1. Screenshot halaman proyeknya
+2. Rename sesuai nama file di atas (misal `proj-agronow.jpg`)
+3. Taruh di `assets/img/`
+4. Buka `index.html`, cari proyek yang bersangkutan
+5. Hapus `<div class="proj-visual-placeholder">🎓</div>`
+6. Uncomment tag `<img ...>` di atasnya
 
-## Cara Upload Thumbnail Proyek
+## Cara Tambah PDF Sertifikat
 
-1. Taruh screenshot proyek di `assets/img/`
-2. Cari komentar `<!-- CARA GANTI THUMBNAIL PROYEK -->` di `index.html`
-3. Lakukan hal yang sama seperti foto profil
+1. Rename file PDF sertifikat sesuai nama di atas
+2. Taruh di folder `assets/pdf/`
+3. Klik sertifikat di web akan otomatis terbuka
 
-## Cara Upload CV / Resume
+## Cara Tambah Porto PDF
 
-1. Rename file CV menjadi `cv.pdf`
-2. Taruh di folder `assets/`
-3. Tombol "LIHAT CV" akan otomatis mengarah ke file tersebut
+1. Rename `Porto_Sementara.pdf` → `porto-sementara.pdf`
+2. Taruh di `assets/pdf/`
+3. Semua link "LIHAT DETAIL DI PORTFOLIO PDF" akan otomatis terhubung
 
 ## Deploy ke Vercel
 
-Repo GitHub `atogaul12/atoeks-portfolio` sudah disiapkan untuk deploy. Situs
-berada di subfolder `portfolio/`.
-
-### Cara deploy
-
-1. Buka [vercel.com](https://vercel.com) → **Add New Project**
-2. Pilih repo `atoeks-portfolio` dari GitHub
-3. Set konfigurasi:
-   - **Framework Preset**: `Other`
-   - **Root Directory**: `portfolio`
-   - **Build Command**: kosong (tidak ada build)
-   - **Output Directory**: kosong
-4. Klik **Deploy**
-
-> Situs 100% statis, jadi tidak perlu command build apa pun.
-
-## Kustomisasi Cepat
-
-| Yang ingin diubah | Lokasi |
-|---|---|
-| Warna cyan/biru | `css/style.css` → bagian `:root` |
-| Nama, bio, deskripsi | `index.html` → section `#hero` & `#tentang` |
-| Data pengalaman | `index.html` → section `#pengalaman` |
-| Link proyek (GitHub/demo) | `index.html` → `href="#"` di `.project-card` |
-| Data sertifikasi | `index.html` → section `#sertifikasi` |
-| Link sosial media | `index.html` → section `#kontak` |
+```bash
+git init
+git add .
+git commit -m "Portfolio v2 - with photo & projects"
+# Push ke GitHub via VS Code Source Control
+# Import repo di vercel.com → Framework: Other → Deploy
+```

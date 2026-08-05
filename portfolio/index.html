@@ -1,462 +1,510 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="M. Ato'ulloh — Full-Stack Web Developer & Cybersecurity. Portfolio."/>
+  <meta name="description" content="M. Ato'ulloh — Full-Stack Web Developer & Cybersecurity Enthusiast. Portfolio."/>
   <title>M. Ato'ulloh | Portfolio</title>
-
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Inter:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
-
-  <!-- Stylesheet -->
   <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
 
-  <!-- Starfield Canvas -->
-  <canvas id="starfield"></canvas>
+<canvas id="starfield"></canvas>
 
-  <!-- ══════════════════════════════════════
-       NAVBAR
-  ══════════════════════════════════════ -->
-  <nav>
-    <a href="#hero" class="nav-logo">ATOULLOH</a>
-    <ul class="nav-links">
-      <li><a href="#about">#about</a></li>
-      <li><a href="#experience">#experience</a></li>
-      <li><a href="#galleria">#projects</a></li>
-      <li><a href="#certifications">#certifications</a></li>
-      <li><a href="#contact">#contact</a></li>
-    </ul>
-  </nav>
+<!-- ══ NAV ══ -->
+<nav>
+  <a href="#hero" class="nav-logo">ATOULLOH</a>
+  <ul class="nav-links">
+    <li><a href="#about">#about</a></li>
+    <li><a href="#experience">#experience</a></li>
+    <li><a href="#galleria">#projects</a></li>
+    <li><a href="#certifications">#certifications</a></li>
+    <li><a href="#contact">#contact</a></li>
+  </ul>
+</nav>
 
-  <!-- ══════════════════════════════════════
-       HERO
-  ══════════════════════════════════════ -->
-  <section id="hero">
-    <div class="hero-left reveal">
-      <p class="hero-eyebrow">// SYSTEM INITIALIZED — PORTFOLIO v1.0</p>
-      <h1 class="hero-name">M. <span>Ato'ulloh</span></h1>
-      <p class="hero-title">Full-Stack Web Dev &amp; Cybersecurity</p>
-      <p class="hero-desc">
-        Lulusan Teknik Informatika Telkom University Purwokerto (IPK 3.86/4.00).
-        Certified Junior Web Developer (BNSP). Berpengalaman dalam full-stack web
-        development, penetration testing OWASP, dan ethical hacking.
+<!-- ══ HERO ══ -->
+<section id="hero">
+  <div class="hero-left reveal">
+    <p class="hero-eyebrow">// SYSTEM INITIALIZED — PORTFOLIO v2.0</p>
+    <h1 class="hero-name">M. <span>Ato'ulloh</span></h1>
+    <p class="hero-title">Web Developer &amp; Cyber Security Enthusiast</p>
+    <p class="hero-desc">
+      Informatics Engineering graduate from Telkom University Purwokerto (GPA 3.86/4.00).
+      Certified Junior Web Developer by BNSP. Delivered production-ready platforms serving 100+ users,
+      led a student organization of 1,000+ members, and passionate about building secure, scalable web applications.
+    </p>
+    <div class="hero-btns">
+      <a href="assets/pdf/cv.pdf" target="_blank" class="hero-cta">⬡ VIEW RESUME</a>
+      <a href="#contact" class="hero-cta secondary">⬡ CONTACT ME</a>
+    </div>
+    <div class="hero-tags">
+      <span class="tag">[ PHP ]</span>
+      <span class="tag">[ Laravel ]</span>
+      <span class="tag">[ JavaScript ]</span>
+      <span class="tag">[ MySQL ]</span>
+      <span class="tag">[ OWASP ]</span>
+      <span class="tag">[ Kali Linux ]</span>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="hero-photo-wrap">
+      <div class="orbit-ring orbit-1"><div class="orbit-dot"></div></div>
+      <div class="orbit-ring orbit-2"><div class="orbit-dot"></div></div>
+      <div class="photo-border">
+        <img src="assets/img/foto.jpg" alt="M. Ato'ulloh"/>
+      </div>
+      <div class="corner tl"></div>
+      <div class="corner tr"></div>
+      <div class="corner bl"></div>
+      <div class="corner br"></div>
+      <span class="hud-label tl">SYS_VER // GPA.386A</span>
+      <span class="hud-label br">UNIT_COORD: PURBALINGGA</span>
+    </div>
+  </div>
+</section>
+
+<div class="glow-line-h"></div>
+
+<!-- ══ ABOUT ══ -->
+<section id="about">
+  <div class="reveal">
+    <p class="section-eyebrow">// INTRODUCTION</p>
+    <h2 class="section-title">About Me</h2>
+  </div>
+  <div class="about-grid">
+    <div class="about-text reveal">
+      <p>
+        A recent Informatics Engineering graduate from Telkom University Purwokerto, certified as a Junior Web Developer
+        with expertise in network security, digital forensics, and cyber attack mitigation.
       </p>
-      <a href="assets/cv.pdf" target="_blank" class="hero-cta">⬡ VIEW RESUME</a>
-      <div class="hero-tags">
-        <span class="tag">[ PHP ]</span>
-        <span class="tag">[ Laravel ]</span>
-        <span class="tag">[ JavaScript ]</span>
-        <span class="tag">[ MySQL ]</span>
-        <span class="tag">[ OWASP ]</span>
-        <span class="tag">[ Kali Linux ]</span>
-      </div>
-    </div>
-
-    <div class="hero-right">
-      <div class="hero-photo-wrap">
-        <!-- Orbit rings -->
-        <div class="orbit-ring orbit-1"><div class="orbit-dot"></div></div>
-        <div class="orbit-ring orbit-2"><div class="orbit-dot"></div></div>
-
-        <!-- Photo -->
-        <div class="photo-border">
-          <!--
-            CARA GANTI FOTO:
-            1. Taruh file foto Anda di folder  assets/img/
-            2. Hapus tag <div class="photo-placeholder"> di bawah
-            3. Uncomment tag <img> berikut:
-          -->
-          <!-- <img src="assets/img/foto.jpg" alt="M. Ato'ulloh" /> -->
-          <div class="photo-placeholder">MA</div>
+      <p>
+        Experienced as a Takmir Masjid administrator, Madrasah Diniyah teacher, and Deputy Chair of the SKI UKM in
+        the field of media and broadcasting. Enthusiastic about developing expertise in Cyber Security (OWASP) and
+        Full Stack Web Development.
+      </p>
+      <p>
+        Delivered production-ready platforms serving 100+ users, led a student organization of 1,000+ members and
+        organized 150+ events over 4 years, and facilitated IT workshops for 134 students.
+      </p>
+      <p class="stack-label" style="margin-top:2rem">// KEY ACHIEVEMENTS</p>
+      <div class="achievements">
+        <div class="achievement-item">
+          <span class="ach-icon">◈</span>
+          <span class="ach-text"><strong>LMS Production (AgroNow &amp; SuperApp)</strong> — PT LPP Agro Nusantara: 2 platform produksi, 5+ modul inti, CSV import, penilaian otomatis, tracking pengiriman.</span>
         </div>
-
-        <!-- Corner brackets -->
-        <div class="corner tl"></div>
-        <div class="corner tr"></div>
-        <div class="corner bl"></div>
-        <div class="corner br"></div>
-
-        <!-- HUD labels -->
-        <span class="hud-label tl">SYS_VER // GPA.386A</span>
-        <span class="hud-label br">UNIT_COORD: PURBALINGGA</span>
-      </div>
-    </div>
-  </section>
-
-  <div class="glow-line-h"></div>
-
-  <!-- ══════════════════════════════════════
-       ABOUT
-  ══════════════════════════════════════ -->
-  <section id="about">
-    <div class="reveal">
-      <p class="section-eyebrow">// INTRODUCTION</p>
-      <h2 class="section-title">About Me</h2>
-    </div>
-
-    <div class="about-grid">
-      <!-- Bio -->
-      <div class="about-text reveal">
-        <p>
-          Lulusan Teknik Informatika Telkom University Purwokerto dengan IPK 3.86/4.00
-          dan pengalaman nyata dalam pengembangan web full-stack serta keamanan siber.
-          Tersertifikasi Junior Web Developer dari BNSP (berlaku hingga 2028).
-        </p>
-        <p>
-          Telah membangun sistem produksi nyata — dari LMS enterprise untuk perusahaan
-          agribisnis nasional hingga penetration testing berbasis OWASP WSTG sebagai
-          proyek tesis pada website aktif.
-        </p>
-        <p>
-          Aktif dalam kepemimpinan organisasi kampus selama 4 tahun, berpengalaman
-          sebagai workshop speaker dan mentor IT.
-        </p>
-
-        <!-- Key Achievements -->
-        <p class="stack-label" style="margin-top:2rem">// KEY ACHIEVEMENTS</p>
-        <div class="achievements">
-          <div class="achievement-item">
-            <span class="ach-icon">◈</span>
-            <span class="ach-text">
-              <strong>LMS Production (AgroNow &amp; SuperApp)</strong> — PT LPP Agro Nusantara:
-              CSV import, penilaian otomatis, shipment tracking, laporan Excel.
-            </span>
-          </div>
-          <div class="achievement-item">
-            <span class="ach-icon">◈</span>
-            <span class="ach-text">
-              <strong>OWASP Pentest Thesis</strong> — Full pentest website Islamic foundation aktif;
-              uncovered critical vulnerabilities, delivered hardening report.
-            </span>
-          </div>
-          <div class="achievement-item">
-            <span class="ach-icon">◈</span>
-            <span class="ach-text">
-              <strong>BNSP Certified Junior Web Developer</strong> — Cert No. 62019 2513 4 0032632 2025,
-              valid until January 2028.
-            </span>
-          </div>
-          <div class="achievement-item">
-            <span class="ach-icon">◈</span>
-            <span class="ach-text">
-              <strong>IPK 3.86 / 4.00</strong> — S1 Teknik Informatika, Telkom University Purwokerto (2021–2025).
-            </span>
-          </div>
+        <div class="achievement-item">
+          <span class="ach-icon">◈</span>
+          <span class="ach-text"><strong>OWASP Pentest Thesis</strong> — Full penetration test pada website Islamic foundation aktif; uncovered critical vulnerabilities &amp; delivered comprehensive hardening report.</span>
         </div>
-      </div>
-
-      <!-- Skills -->
-      <div class="tech-stack reveal">
-        <div class="skill-category">
-          <span class="skill-cat-label">// Web Development</span>
-          <div class="stack-grid">
-            <span class="tag">PHP</span>
-            <span class="tag">Laravel</span>
-            <span class="tag">HTML</span>
-            <span class="tag">CSS</span>
-            <span class="tag">JavaScript</span>
-            <span class="tag">AJAX</span>
-            <span class="tag">MySQL</span>
-            <span class="tag">Bootstrap</span>
-            <span class="tag">Chart.js</span>
-          </div>
+        <div class="achievement-item">
+          <span class="ach-icon">◈</span>
+          <span class="ach-text"><strong>BNSP Certified Junior Web Developer</strong> — Cert No. 62019 2513 4 0032632 2025, berlaku hingga January 2028.</span>
         </div>
-        <div class="skill-category">
-          <span class="skill-cat-label">// Cybersecurity</span>
-          <div class="stack-grid">
-            <span class="tag">OWASP WSTG</span>
-            <span class="tag">Penetration Testing</span>
-            <span class="tag">Kali Linux</span>
-            <span class="tag">Burp Suite</span>
-            <span class="tag">Wireshark</span>
-            <span class="tag">Nmap</span>
-            <span class="tag">OWASP ZAP</span>
-            <span class="tag">Digital Forensics</span>
-            <span class="tag">Ethical Hacking</span>
-            <span class="tag">Nikto</span>
-          </div>
-        </div>
-        <div class="skill-category">
-          <span class="skill-cat-label">// Tools &amp; Platforms</span>
-          <div class="stack-grid">
-            <span class="tag">Git</span>
-            <span class="tag">GitHub</span>
-            <span class="tag">Figma</span>
-          </div>
-        </div>
-        <div class="skill-category">
-          <span class="skill-cat-label">// Soft Skills</span>
-          <div class="stack-grid">
-            <span class="tag">Leadership</span>
-            <span class="tag">Mentorship</span>
-            <span class="tag">Public Speaking</span>
-            <span class="tag">Team Collaboration</span>
-          </div>
+        <div class="achievement-item">
+          <span class="ach-icon">◈</span>
+          <span class="ach-text"><strong>IPK 3.86 / 4.00</strong> — S1 Teknik Informatika, Telkom University Purwokerto (2021–2025).</span>
         </div>
       </div>
     </div>
-  </section>
 
-  <div class="divider"></div>
-
-  <!-- ══════════════════════════════════════
-       EXPERIENCE
-  ══════════════════════════════════════ -->
-  <section id="experience">
-    <div class="reveal">
-      <p class="section-eyebrow">// WORK HISTORY</p>
-      <h2 class="section-title">Experience</h2>
+    <div class="tech-stack reveal">
+      <div style="margin-bottom:1.2rem">
+        <span class="skill-cat-label">// Web Development</span>
+        <div class="stack-grid">
+          <span class="tag">PHP</span><span class="tag">Laravel</span><span class="tag">Python</span>
+          <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript</span>
+          <span class="tag">AJAX</span><span class="tag">MySQL</span><span class="tag">Bootstrap</span>
+          <span class="tag">Chart.js</span><span class="tag">REST API</span><span class="tag">MVC</span>
+        </div>
+      </div>
+      <div style="margin-bottom:1.2rem">
+        <span class="skill-cat-label">// Cybersecurity</span>
+        <div class="stack-grid">
+          <span class="tag">OWASP WSTG</span><span class="tag">Penetration Testing</span>
+          <span class="tag">Kali Linux</span><span class="tag">Burp Suite</span>
+          <span class="tag">Wireshark</span><span class="tag">Nmap</span>
+          <span class="tag">OWASP ZAP</span><span class="tag">Nikto</span>
+          <span class="tag">Metasploit</span><span class="tag">OSINT</span>
+          <span class="tag">Digital Forensics</span><span class="tag">Ethical Hacking</span>
+        </div>
+      </div>
+      <div style="margin-bottom:1.2rem">
+        <span class="skill-cat-label">// Tools &amp; Platforms</span>
+        <div class="stack-grid">
+          <span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">VS Code</span>
+          <span class="tag">Postman</span><span class="tag">Linux CLI</span><span class="tag">Figma</span>
+        </div>
+      </div>
+      <div>
+        <span class="skill-cat-label">// Soft Skills</span>
+        <div class="stack-grid">
+          <span class="tag">Leadership</span><span class="tag">Mentorship</span>
+          <span class="tag">Public Speaking</span><span class="tag">Team Collaboration</span>
+          <span class="tag">Problem Solving</span><span class="tag">Teaching</span>
+        </div>
+      </div>
     </div>
+  </div>
+</section>
 
+<div class="divider"></div>
+
+<!-- ══ EXPERIENCE ══ -->
+<section id="experience">
+  <div class="reveal">
+    <p class="section-eyebrow">// WORK HISTORY</p>
+    <h2 class="section-title">Experience</h2>
+  </div>
+
+  <div class="exp-item reveal">
+    <div class="exp-date">Nov 2025 — May 2026<br/><br/>Yogyakarta<br/><br/><em style="color:var(--cyan);font-style:normal">Kemnaker Program</em></div>
     <div>
-      <!-- PT LPP Agro Nusantara -->
-      <div class="exp-item reveal">
-        <div class="exp-date">Nov 2025 — May 2026<br/><br/>Yogyakarta</div>
-        <div>
-          <p class="exp-company">PT LPP AGRO NUSANTARA</p>
-          <p class="exp-role">IT Developer</p>
-          <div class="exp-desc">
-            <ul>
-              <li>Mendesain &amp; mengembangkan platform <strong>Super App &amp; AgroNow</strong> (PHP &amp; MySQL) — modul manajemen peserta, invoice, penilaian otomatis MCQ &amp; essay.</li>
-              <li>Optimasi performa via integrasi AJAX dan pagination untuk mengurangi server response time.</li>
-              <li>Implementasi HTML-stripping sanitization untuk mencegah injection vulnerabilities.</li>
-              <li>Mengembangkan modal interaktif real-time &amp; standarisasi UI lintas platform.</li>
-              <li>Menjaga code quality via GitHub; QA end-to-end sebelum deployment.</li>
-            </ul>
-          </div>
+      <p class="exp-company">PT LPP AGRO NUSANTARA</p>
+      <p class="exp-role">IT Developer</p>
+      <div class="exp-desc"><ul>
+        <li>Mendesain &amp; mengembangkan 2 platform produksi (<strong>Super App &amp; AgroNow</strong>) menggunakan PHP &amp; MySQL dalam 7 bulan — 5+ modul inti: manajemen peserta, invoice, penilaian otomatis MCQ &amp; essay.</li>
+        <li>Meningkatkan performa aplikasi via integrasi AJAX; mengurangi server response time ~40% pada data-heavy pages.</li>
+        <li>Implementasi HTML-stripping sanitization untuk mencegah injection vulnerabilities &amp; memastikan konsistensi metadata.</li>
+        <li>Mengembangkan modal interaktif real-time &amp; standarisasi UI lintas platform.</li>
+        <li>Menjaga code quality via GitHub; QA end-to-end dan menyelesaikan 15+ critical bugs sebelum deployment.</li>
+      </ul></div>
+    </div>
+  </div>
+
+  <div class="exp-item reveal">
+    <div class="exp-date">Jul — Sep 2024<br/><br/>Purwokerto</div>
+    <div>
+      <p class="exp-company">PT CAZH TEKNOLOGI INOVASI</p>
+      <p class="exp-role">Web Developer Intern</p>
+      <div class="exp-desc"><ul>
+        <li>Merancang &amp; mengembangkan 4+ halaman UI/UX untuk sistem manajemen ternak <strong>ID FARM</strong> — landing page, user profile, dan antarmuka edit profil.</li>
+        <li>Dibangun dalam 3 bulan menggunakan Laravel, HTML, dan responsive CSS.</li>
+      </ul></div>
+    </div>
+  </div>
+
+  <div class="exp-item reveal">
+    <div class="exp-date">Jan 2021 — Des 2024<br/><br/>Purwokerto</div>
+    <div>
+      <p class="exp-company">SKI UKM — TELKOM UNIVERSITY PURWOKERTO</p>
+      <p class="exp-role">Vice Chairman &amp; Head of Public Relations and Media</p>
+      <div class="exp-desc"><ul>
+        <li>Memimpin divisi Humas &amp; Media selama 4 tahun — mengelola komunikasi &amp; broadcasting untuk komunitas 1.000+ anggota.</li>
+        <li>Mengorganisir &amp; mengeksekusi 150+ program pengembangan karakter Islami, workshop, dan kegiatan sosial.</li>
+      </ul></div>
+    </div>
+  </div>
+
+  <div class="exp-item reveal">
+    <div class="exp-date">Jan 2021 — Des 2024<br/><br/>Purwokerto</div>
+    <div>
+      <p class="exp-company">MENTORING AGAMA — TELKOM UNIVERSITY PURWOKERTO</p>
+      <p class="exp-role">Workshop Speaker &amp; Mentor</p>
+      <div class="exp-desc"><ul>
+        <li>Mentoring 20+ mahasiswa per semester dalam pengembangan spiritual &amp; karakter Islami via sesi kelompok dan bimbingan personal selama 4 tahun.</li>
+        <li>Menyampaikan workshop terstruktur tentang pendidikan agama dan pengembangan diri.</li>
+      </ul></div>
+    </div>
+  </div>
+
+  <div class="exp-item reveal">
+    <div class="exp-date">Des 2022<br/><br/>Purbalingga</div>
+    <div>
+      <p class="exp-company">COMMUNITY SERVICE WORKSHOP — MTs MUHAMMADIYAH 1 PURBALINGGA</p>
+      <p class="exp-role">Facilitator</p>
+      <div class="exp-desc"><ul>
+        <li>Memfasilitasi workshop IT untuk <strong>134 siswa SMP</strong> menggunakan metodologi CTL (Contextual Teaching and Learning).</li>
+        <li>Memberikan motivasi tentang penggunaan teknologi secara etis &amp; jalur karier di sektor teknologi.</li>
+      </ul></div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ══ PROJECTS ══ -->
+<section id="galleria">
+  <div class="reveal">
+    <p class="section-eyebrow">// PROJECT CASE STUDY</p>
+    <h2 class="section-title">Galleria</h2>
+  </div>
+
+  <!-- PROJECT 1: AgroNow LMS -->
+  <article class="project-article reveal">
+    <div class="proj-visual" style="background:linear-gradient(135deg,#050d18,#081a12)">
+      <!--
+        Taruh screenshot AgroNow di assets/img/proj-agronow.jpg
+        lalu uncomment: <img src="assets/img/proj-agronow.jpg" alt="AgroNow LMS"/>
+      -->
+      <div class="proj-visual-placeholder">🎓</div>
+    </div>
+    <div class="proj-content">
+      <p class="proj-number">01 —</p>
+      <p class="proj-type">LMS — Production App · PT LPP Agro Nusantara</p>
+      <h3 class="proj-title">AgroNow LMS &amp; SuperApp</h3>
+      <p class="proj-desc">
+        Platform Learning Management System produksi untuk PT LPP Agro Nusantara (program Kemnaker).
+        Sistem ini melayani 100+ pengguna dengan fitur lengkap dari manajemen pembelajaran hingga tracking pengiriman.
+      </p>
+      <ul class="proj-bullets">
+        <li>Mengembangkan fitur Learning Catalog import via CSV dengan validasi data otomatis &amp; error handling deskriptif.</li>
+        <li>Membangun CRUD lengkap data karyawan — tambah, edit, update status, reset password, search, &amp; export data.</li>
+        <li>Kontribusi pada <strong>AgroNow Classroom</strong> — sesi pelatihan, enrollment peserta, materi PDF, asesmen, sertifikat, &amp; question bank.</li>
+        <li>Membangun <strong>Insight Classroom</strong> — laporan nilai &amp; biodata peserta dengan filter dinamis &amp; export Excel.</li>
+        <li>Mengembangkan <strong>Tracking Receipt</strong> — manajemen amplop, paket, invoice, nomor resi, kode otomatis &amp; validasi data.</li>
+      </ul>
+      <div class="proj-tags">
+        <span class="proj-tag">PHP</span><span class="proj-tag">MySQL</span>
+        <span class="proj-tag">AJAX</span><span class="proj-tag">Bootstrap</span>
+        <span class="proj-tag">JavaScript</span><span class="proj-tag">GitHub</span>
+      </div>
+      <a href="assets/pdf/porto-sementara.pdf" target="_blank" class="proj-link">↗ LIHAT DETAIL DI PORTFOLIO PDF</a>
+    </div>
+  </article>
+
+  <!-- PROJECT 2: SuperApp -->
+  <article class="project-article reveal">
+    <div class="proj-visual" style="background:linear-gradient(135deg,#08100a,#050d18)">
+      <!--
+        Taruh screenshot SuperApp di assets/img/proj-superapp.jpg
+        lalu uncomment: <img src="assets/img/proj-superapp.jpg" alt="SuperApp"/>
+      -->
+      <div class="proj-visual-placeholder">🏢</div>
+    </div>
+    <div class="proj-content">
+      <p class="proj-number">02 —</p>
+      <p class="proj-type">Web App — Production · PT LPP Agro Nusantara</p>
+      <h3 class="proj-title">SuperApp PT LPP Agro Nusantara</h3>
+      <p class="proj-desc">
+        Platform internal SuperApp untuk manajemen operasional PT LPP Agro Nusantara.
+        Difokuskan pada digitalisasi proses administrasi dan pengelolaan data karyawan secara terpadu.
+      </p>
+      <ul class="proj-bullets">
+        <li>Mempelajari framework internal SuperApp dan mengembangkan fitur CRUD data karyawan.</li>
+        <li>Mengembangkan fitur <strong>Tracking Receipt</strong> — manajemen amplop, paket, invoice, nomor resi, kode otomatis, dan validasi data.</li>
+        <li>Meningkatkan elemen UI — form validation, action buttons, confirmation pop-ups, &amp; manajemen status data akhir.</li>
+        <li>Mengoptimasi performa dengan pagination &amp; AJAX untuk mengurangi response time ~40% pada halaman data berat.</li>
+      </ul>
+      <div class="proj-tags">
+        <span class="proj-tag">PHP</span><span class="proj-tag">MySQL</span>
+        <span class="proj-tag">AJAX</span><span class="proj-tag">Bootstrap</span>
+        <span class="proj-tag">JavaScript</span>
+      </div>
+      <a href="assets/pdf/porto-sementara.pdf" target="_blank" class="proj-link">↗ LIHAT DETAIL DI PORTFOLIO PDF</a>
+    </div>
+  </article>
+
+  <!-- PROJECT 3: Penetration Testing -->
+  <article class="project-article reveal">
+    <div class="proj-visual" style="background:linear-gradient(135deg,#050f1a,#081a10)">
+      <!--
+        Taruh screenshot Burp Suite di assets/img/proj-pentest.jpg
+        lalu uncomment: <img src="assets/img/proj-pentest.jpg" alt="Penetration Testing"/>
+      -->
+      <div class="proj-visual-placeholder">🛡️</div>
+    </div>
+    <div class="proj-content">
+      <p class="proj-number">03 —</p>
+      <p class="proj-type">Thesis Project — Security Analysis</p>
+      <h3 class="proj-title">Penetration Testing — Website Security Analysis Using OWASP WSTG</h3>
+      <p class="proj-desc">
+        Proyek tesis berupa comprehensive vulnerability assessment pada website aktif sebuah yayasan Islam,
+        mengikuti metodologi OWASP Web Security Testing Guide (WSTG). Menghasilkan laporan hardening komprehensif
+        yang membantu meningkatkan ketahanan sistem web secara keseluruhan.
+      </p>
+      <ul class="proj-bullets">
+        <li>Melakukan pengujian keamanan menyeluruh menggunakan metodologi OWASP WSTG pada website yayasan Islam aktif.</li>
+        <li>Mengidentifikasi &amp; mendokumentasikan multiple security issues — authentication flaws, input validation vulnerabilities, server misconfigurations.</li>
+        <li>Menggunakan tools: Kali Linux, Burp Suite, OWASP ZAP, Nmap, Nikto untuk web reconnaissance &amp; exploitation.</li>
+        <li>Menghasilkan laporan keamanan terstruktur dengan strategi mitigasi teknis &amp; rekomendasi hardening yang actionable.</li>
+      </ul>
+      <div class="proj-tags">
+        <span class="proj-tag">OWASP WSTG</span><span class="proj-tag">Kali Linux</span>
+        <span class="proj-tag">Burp Suite</span><span class="proj-tag">OWASP ZAP</span>
+        <span class="proj-tag">Nmap</span><span class="proj-tag">Nikto</span>
+      </div>
+      <a href="assets/pdf/porto-sementara.pdf" target="_blank" class="proj-link">↗ LIHAT DETAIL DI PORTFOLIO PDF</a>
+    </div>
+  </article>
+
+  <!-- PROJECT 4: ID Farm -->
+  <article class="project-article reveal">
+    <div class="proj-visual" style="background:linear-gradient(135deg,#0a0d10,#0f1a10)">
+      <!--
+        Taruh screenshot ID Farm di assets/img/proj-idfarm.jpg
+        lalu uncomment: <img src="assets/img/proj-idfarm.jpg" alt="ID Farm"/>
+      -->
+      <div class="proj-visual-placeholder">🌾</div>
+    </div>
+    <div class="proj-content">
+      <p class="proj-number">04 —</p>
+      <p class="proj-type">Website — Internship · PT Cazh Teknologi Inovasi</p>
+      <h3 class="proj-title">ID Farm — Livestock Management System</h3>
+      <p class="proj-desc">
+        Sistem manajemen ternak digital "Transformasi Digital Untuk Peternakan yang Lebih Efisien".
+        Merancang dan mengimplementasikan tampilan user-facing yang responsif dan modern dalam 3 bulan magang.
+      </p>
+      <ul class="proj-bullets">
+        <li>Merancang &amp; mengimplementasikan UI/UX untuk landing page sistem manajemen ternak ID FARM.</li>
+        <li>Mengembangkan halaman profil pengguna &amp; antarmuka edit profil yang intuitif.</li>
+        <li>Memastikan semua tampilan fully responsive menggunakan Laravel, HTML, dan CSS.</li>
+        <li>Membangun 4+ halaman dalam 3 bulan dengan standar code quality yang terjaga.</li>
+      </ul>
+      <div class="proj-tags">
+        <span class="proj-tag">Laravel</span><span class="proj-tag">PHP</span>
+        <span class="proj-tag">HTML/CSS</span><span class="proj-tag">Responsive Design</span>
+        <span class="proj-tag">Figma</span>
+      </div>
+      <a href="assets/pdf/porto-sementara.pdf" target="_blank" class="proj-link">↗ LIHAT DETAIL DI PORTFOLIO PDF</a>
+    </div>
+  </article>
+
+  <!-- PROJECT 5: Poverty Visualization -->
+  <article class="project-article reveal">
+    <div class="proj-visual" style="background:linear-gradient(135deg,#050a1a,#0a0f22)">
+      <!--
+        Taruh screenshot PT Kebul Jaya di assets/img/proj-poverty.jpg
+        lalu uncomment: <img src="assets/img/proj-poverty.jpg" alt="Poverty Data Platform"/>
+      -->
+      <div class="proj-visual-placeholder">📊</div>
+    </div>
+    <div class="proj-content">
+      <p class="proj-number">05 —</p>
+      <p class="proj-type">Website — University Group Project</p>
+      <h3 class="proj-title">PT Kebul Jaya — Indonesian Poverty Data Visualization Platform</h3>
+      <p class="proj-desc">
+        Platform web full-stack "Mengenai Kemiskinan Di Indonesia" sebagai final university group project.
+        Memvisualisasikan statistik kemiskinan Indonesia secara interaktif dan mudah dipahami publik.
+      </p>
+      <ul class="proj-bullets">
+        <li>Membangun full-stack web platform menggunakan native PHP, Bootstrap, HTML, CSS, dan JavaScript.</li>
+        <li>Mengimplementasikan sistem autentikasi aman dengan role terpisah — Admin dan User.</li>
+        <li>Mengintegrasikan Chart.js untuk menciptakan visualisasi interaktif dari dataset kemiskinan yang kompleks.</li>
+        <li>Membuat fitur forum diskusi komunitas untuk memfasilitasi keterlibatan &amp; diskusi pengguna.</li>
+      </ul>
+      <div class="proj-tags">
+        <span class="proj-tag">PHP</span><span class="proj-tag">Bootstrap</span>
+        <span class="proj-tag">Chart.js</span><span class="proj-tag">MySQL</span>
+        <span class="proj-tag">JavaScript</span><span class="proj-tag">RBAC</span>
+      </div>
+      <a href="assets/pdf/porto-sementara.pdf" target="_blank" class="proj-link">↗ LIHAT DETAIL DI PORTFOLIO PDF</a>
+    </div>
+  </article>
+
+</section>
+
+<div class="divider"></div>
+
+<!-- ══ CERTIFICATIONS ══ -->
+<section id="certifications">
+  <div class="reveal">
+    <p class="section-eyebrow">// CREDENTIALS</p>
+    <h2 class="section-title">Certifications</h2>
+  </div>
+  <div class="cert-grid">
+
+    <button class="cert-card reveal"
+      data-pdf="assets/pdf/sertif-bnsp.pdf"
+      data-title="Sertifikat Junior Web Developer — BNSP &amp; LSP Informatika"
+      data-filename="sertif-bnsp.pdf">
+      <p class="cert-issuer">BNSP &amp; LSP INFORMATIKA</p>
+      <p class="cert-name">Junior Web Developer</p>
+      <p class="cert-meta">No: 62019 2513 4 0032632 2025<br/>Issued: Jan 2025 · Valid until: Jan 2028</p>
+      <span class="cert-open">⬡ Klik untuk Preview &amp; Download</span>
+    </button>
+
+    <button class="cert-card reveal"
+      data-pdf="assets/pdf/sertif-codepolitan.pdf"
+      data-title="Sertifikat Junior Cyber Security — Codepolitan"
+      data-filename="sertif-codepolitan.pdf">
+      <p class="cert-issuer">CODEPOLITAN ONLINE CLASSES</p>
+      <p class="cert-name">Junior Cyber Security — 4 Modules</p>
+      <p class="cert-meta">
+        · Cyber Security &amp; Penetration Testing Fundamental (Mar 2025–2028)<br/>
+        · OSINT for Cybersecurity (Nov 2025–2028)<br/>
+        · System Security Vulnerabilities (Nov 2025–2028)<br/>
+        · Ethical Hacking for Beginners Live Class (Nov 2025–2028)
+      </p>
+      <span class="cert-open">⬡ Klik untuk Preview &amp; Download</span>
+    </button>
+
+    <button class="cert-card reveal"
+      data-pdf="assets/pdf/sertif-google.pdf"
+      data-title="Google IT Support Professional Certificate — Coursera"
+      data-filename="sertif-google.pdf">
+      <p class="cert-issuer">GOOGLE / COURSERA</p>
+      <p class="cert-name">IT Support Professional Certificate</p>
+      <p class="cert-meta">
+        Issued: January 2023<br/>
+        Modules: Technical Support · Networking · OS · IT Infrastructure · IT Security
+      </p>
+      <span class="cert-open">⬡ Klik untuk Preview &amp; Download</span>
+    </button>
+
+    <button class="cert-card reveal"
+      data-pdf="assets/pdf/sertif-idn.pdf"
+      data-title="Cyber Security Penetration Testing — ID-Networkers (IDN.ID)"
+      data-filename="sertif-idn.pdf">
+      <p class="cert-issuer">ID-NETWORKERS (IDN.ID)</p>
+      <p class="cert-name">Cyber Security Penetration Testing</p>
+      <p class="cert-meta">
+        Cybersecurity Principles · Networking Fundamentals · Linux Basics<br/>
+        Web Recon · Burp Suite · Android Pentest · Active Directory · Post-Exploitation
+      </p>
+      <span class="cert-open">⬡ Klik untuk Preview &amp; Download</span>
+    </button>
+
+  </div>
+  <p style="font-family:'Space Mono',monospace;font-size:.65rem;color:var(--text-faint);margin-top:1.5rem;text-align:center">
+    // Taruh file PDF sertifikat di folder <span style="color:var(--blue)">assets/pdf/</span> dengan nama yang sesuai di atas
+  </p>
+
+  <!-- ══ PDF PREVIEW MODAL ══ -->
+  <div class="pdf-modal-overlay" id="pdfModal" role="dialog" aria-modal="true">
+    <div class="pdf-modal">
+      <div class="pdf-modal-header">
+        <span class="pdf-modal-title" id="pdfModalTitle">// SERTIFIKAT</span>
+        <div class="pdf-modal-actions">
+          <a href="#" class="pdf-btn-download" id="pdfModalDownload" download>⬇ DOWNLOAD PDF</a>
+          <button class="pdf-btn-close" id="pdfModalClose" aria-label="Tutup">✕</button>
         </div>
       </div>
-
-      <!-- PT Cazh -->
-      <div class="exp-item reveal">
-        <div class="exp-date">Jul — Sep 2024<br/><br/>Purwokerto</div>
-        <div>
-          <p class="exp-company">PT CAZH TEKNOLOGI INOVASI</p>
-          <p class="exp-role">Web Developer Intern</p>
-          <div class="exp-desc">
-            <ul>
-              <li>Merancang &amp; mengembangkan UI/UX sistem manajemen ternak <strong>ID FARM</strong> — landing page, profil pengguna, dan antarmuka edit profil.</li>
-              <li>Dibangun menggunakan Laravel, HTML, dan responsive CSS.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <!-- SKI UKM -->
-      <div class="exp-item reveal">
-        <div class="exp-date">Jan 2020 — Des 2024<br/><br/>Purwokerto</div>
-        <div>
-          <p class="exp-company">SKI UKM — TELKOM UNIVERSITY PURWOKERTO</p>
-          <p class="exp-role">Vice Chairman &amp; Head of Public Relations</p>
-          <div class="exp-desc">
-            <ul>
-              <li>Memimpin divisi Humas &amp; Media organisasi Islam kampus (ratusan anggota) selama 4 tahun.</li>
-              <li>Mengorganisir program karakter Islami, workshop, dan kegiatan sosial sepanjang tahun akademik.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <!-- Mentoring -->
-      <div class="exp-item reveal">
-        <div class="exp-date">Jan 2020 — Des 2024<br/><br/>Purwokerto</div>
-        <div>
-          <p class="exp-company">MENTORING AGAMA — TELKOM UNIVERSITY PURWOKERTO</p>
-          <p class="exp-role">Workshop Speaker &amp; Mentor</p>
-          <div class="exp-desc">
-            <ul>
-              <li>Mentoring pertumbuhan spiritual &amp; karakter Islami via sesi kelompok dan bimbingan personal.</li>
-              <li>Menyampaikan workshop terstruktur tentang pendidikan agama dan pengembangan diri.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <!-- Community Service -->
-      <div class="exp-item reveal">
-        <div class="exp-date">Des 2022<br/><br/>Purbalingga</div>
-        <div>
-          <p class="exp-company">COMMUNITY SERVICE — MTs MUHAMMADIYAH 1 PURBALINGGA</p>
-          <p class="exp-role">Facilitator</p>
-          <div class="exp-desc">
-            <ul>
-              <li>Memfasilitasi workshop IT untuk 134 siswa SMP menggunakan metodologi CTL.</li>
-              <li>Memberikan motivasi tentang pendidikan tinggi dan karier di sektor teknologi.</li>
-            </ul>
-          </div>
-        </div>
+      <div class="pdf-modal-body">
+        <iframe id="pdfModalFrame" src="" title="PDF Preview" allowfullscreen></iframe>
       </div>
     </div>
-  </section>
+  </div>
 
-  <div class="divider"></div>
+</section>
 
-  <!-- ══════════════════════════════════════
-       PROJECTS
-  ══════════════════════════════════════ -->
-  <section id="galleria">
-    <div class="reveal">
-      <p class="section-eyebrow">// PROJECTS</p>
-      <h2 class="section-title">Galleria</h2>
+<div class="glow-line-h"></div>
+
+<!-- ══ CONTACT ══ -->
+<section id="contact">
+  <div class="reveal">
+    <p class="section-eyebrow">// CONTACT</p>
+    <h2 class="contact-question">Ada proyek atau kolaborasi <span>dalam pikiran?</span></h2>
+    <a href="mailto:muhammadatoulloh@gmail.com" class="contact-email">muhammadatoulloh@gmail.com</a>
+    <div class="socials">
+      <a href="https://github.com/atogaul12" target="_blank" class="social-btn">GitHub ↗</a>
+      <a href="https://linkedin.com/in/muhammadatoulloh" target="_blank" class="social-btn">LinkedIn ↗</a>
+      <a href="https://wa.me/6281236177505" target="_blank" class="social-btn">WhatsApp ↗</a>
     </div>
+  </div>
+</section>
 
-    <div class="projects-grid">
+<!-- ══ FOOTER ══ -->
+<footer>
+  <span class="footer-logo">ATOULLOH</span>
+  <span class="footer-text">© 2025 M. Ato'ulloh — Purbalingga, Indonesia</span>
+  <span class="footer-text">SYSTEM ONLINE</span>
+</footer>
 
-      <!-- Project 1 -->
-      <a href="#" class="project-card reveal">
-        <div class="project-img" style="background: linear-gradient(135deg, #050f1a, #081a10)">
-          <!--
-            CARA GANTI THUMBNAIL PROYEK:
-            1. Taruh screenshot proyek di  assets/img/  (misal: proj-pentest.jpg)
-            2. Hapus <div class="project-img-placeholder"> di bawah
-            3. Uncomment <img> berikut:
-          -->
-          <!-- <img src="assets/img/proj-pentest.jpg" alt="Penetration Testing" /> -->
-          <div class="project-img-placeholder">🛡️</div>
-        </div>
-        <div class="project-info">
-          <p class="project-type">Thesis — Security Analysis</p>
-          <p class="project-name">Penetration Testing OWASP WSTG</p>
-          <p class="project-desc">Full pentest website Islamic foundation aktif. Identified auth weaknesses, input flaws, server misconfigs &amp; delivered hardening report.</p>
-          <div class="project-tags">
-            <span class="project-tag">OWASP WSTG</span>
-            <span class="project-tag">Kali Linux</span>
-            <span class="project-tag">Burp Suite</span>
-            <span class="project-tag">Nmap</span>
-            <span class="project-tag">Nikto</span>
-          </div>
-        </div>
-      </a>
-
-      <!-- Project 2 -->
-      <a href="#" class="project-card reveal">
-        <div class="project-img" style="background: linear-gradient(135deg, #050a1a, #0a0f22)">
-          <!-- <img src="assets/img/proj-poverty.jpg" alt="Poverty Visualization" /> -->
-          <div class="project-img-placeholder">📊</div>
-        </div>
-        <div class="project-info">
-          <p class="project-type">Website — Full Stack</p>
-          <p class="project-name">Indonesian Poverty Data Visualization</p>
-          <p class="project-desc">Platform visualisasi data kemiskinan Indonesia interaktif. Role-based auth (Admin &amp; User) &amp; forum diskusi komunitas.</p>
-          <div class="project-tags">
-            <span class="project-tag">PHP</span>
-            <span class="project-tag">Bootstrap</span>
-            <span class="project-tag">Chart.js</span>
-            <span class="project-tag">MySQL</span>
-          </div>
-        </div>
-      </a>
-
-      <!-- Project 3 -->
-      <a href="#" class="project-card reveal">
-        <div class="project-img" style="background: linear-gradient(135deg, #0a0d10, #0f1a10)">
-          <!-- <img src="assets/img/proj-idfarm.jpg" alt="ID Farm" /> -->
-          <div class="project-img-placeholder">🌾</div>
-        </div>
-        <div class="project-info">
-          <p class="project-type">Website — Internship</p>
-          <p class="project-name">ID Farm</p>
-          <p class="project-desc">Sistem manajemen ternak: landing page, user profile, dan antarmuka edit profil yang responsif.</p>
-          <div class="project-tags">
-            <span class="project-tag">Laravel</span>
-            <span class="project-tag">PHP</span>
-            <span class="project-tag">HTML/CSS</span>
-            <span class="project-tag">Figma</span>
-          </div>
-        </div>
-      </a>
-
-      <!-- Project 4 -->
-      <a href="#" class="project-card reveal">
-        <div class="project-img" style="background: linear-gradient(135deg, #050d18, #0a1525)">
-          <!-- <img src="assets/img/proj-lms.jpg" alt="AgroNow LMS" /> -->
-          <div class="project-img-placeholder">🎓</div>
-        </div>
-        <div class="project-info">
-          <p class="project-type">LMS — Production App</p>
-          <p class="project-name">AgroNow &amp; SuperApp LMS</p>
-          <p class="project-desc">LMS enterprise: CSV import, penilaian otomatis, sertifikat, question bank, shipment tracking, laporan Excel dinamis.</p>
-          <div class="project-tags">
-            <span class="project-tag">PHP</span>
-            <span class="project-tag">MySQL</span>
-            <span class="project-tag">AJAX</span>
-            <span class="project-tag">Bootstrap</span>
-          </div>
-        </div>
-      </a>
-
-    </div>
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- ══════════════════════════════════════
-       CERTIFICATIONS
-  ══════════════════════════════════════ -->
-  <section id="certifications">
-    <div class="reveal">
-      <p class="section-eyebrow">// CREDENTIALS</p>
-      <h2 class="section-title">Certifications</h2>
-    </div>
-
-    <div class="cert-grid">
-      <div class="cert-card reveal">
-        <p class="cert-issuer">BNSP &amp; LSP INFORMATIKA</p>
-        <p class="cert-name">Junior Web Developer</p>
-        <p class="cert-meta">No: 62019 2513 4 0032632 2025 · Jan 2025 – Jan 2028</p>
-      </div>
-      <div class="cert-card reveal">
-        <p class="cert-issuer">CODEPOLITAN ONLINE CLASSES</p>
-        <p class="cert-name">Junior Cyber Security — 4 Modules</p>
-        <p class="cert-meta">Pentest Fundamental · OSINT · System Vulnerabilities · Ethical Hacking (2025–2028)</p>
-      </div>
-      <div class="cert-card reveal">
-        <p class="cert-issuer">GOOGLE / COURSERA</p>
-        <p class="cert-name">IT Support Professional Certificate</p>
-        <p class="cert-meta">Technical Support · Networking · OS · Infrastructure · IT Security · Jan 2023</p>
-      </div>
-      <div class="cert-card reveal">
-        <p class="cert-issuer">ID-NETWORKERS (IDN.ID)</p>
-        <p class="cert-name">Cyber Security Penetration Testing</p>
-        <p class="cert-meta">Web Recon · Burp Suite · Android Pentest · Active Directory · Post-Exploitation</p>
-      </div>
-    </div>
-  </section>
-
-  <div class="glow-line-h"></div>
-
-  <!-- ══════════════════════════════════════
-       CONTACT
-  ══════════════════════════════════════ -->
-  <section id="contact">
-    <div class="reveal">
-      <p class="section-eyebrow">// CONTACT</p>
-      <h2 class="contact-question">Ada proyek atau kolaborasi <span>dalam pikiran?</span></h2>
-      <a href="mailto:muhammadatoulloh@gmail.com" class="contact-email">muhammadatoulloh@gmail.com</a>
-      <div class="socials">
-        <a href="https://github.com/atogaul12" target="_blank" class="social-btn">GitHub ↗</a>
-        <a href="https://linkedin.com/in/muhammadatoulloh" target="_blank" class="social-btn">LinkedIn ↗</a>
-        <a href="tel:+6281236177505" class="social-btn">+62 812-3617-7505</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ══════════════════════════════════════
-       FOOTER
-  ══════════════════════════════════════ -->
-  <footer>
-    <span class="footer-logo">ATOULLOH</span>
-    <span class="footer-text">© 2025 M. Ato'ulloh — Purbalingga, Indonesia</span>
-    <span class="footer-text">SYSTEM ONLINE</span>
-  </footer>
-
-  <!-- Scripts -->
-  <script src="js/main.js"></script>
-
+<script src="js/main.js"></script>
 </body>
 </html>
